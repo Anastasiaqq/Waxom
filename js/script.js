@@ -6,5 +6,5 @@ $(function (){
     $(".close").click(function(){
         $(".basket").toggleClass("hidden");
     })
-
+    
 })
