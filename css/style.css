@@ -24,8 +24,8 @@ button {
 .headcont {
   display: flex;
   justify-content: space-between;
-  margin-right: 18%;
-  margin-left: 18%;
+  max-width: 850px;
+  margin: 0 auto;
   padding-top: 40px;
   margin-bottom: 270px;
 }
@@ -74,10 +74,24 @@ button {
   color: #ffffff;
   margin-right: 5px;
 }
-/* .icon:first-child {
-  display: block;
+.navicons {
   position: relative;
-} */
+}
+.searchinput {
+  position: absolute;
+  top: 10px;
+  left: 490px;
+  width: 100px;
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #8c8c8c;
+}
+.searchinput:focus {
+  outline: none;
+  border-color: #8c8c8c;
+}
 .basket {
   position: absolute;
   top: 60px;
@@ -110,7 +124,7 @@ button {
   font-size: 16px;
   color: #8c8c8c;
 }
-.close {
+.basketclose {
   display: block;
   width: 20px;
   height: 20px;
@@ -122,9 +136,10 @@ button {
   font-weight: 600;
 }
 .headoffer {
-  /* margin: auto; */
-  margin-left: 30%;
-  margin-right: 30%;
+  max-width: 850px;
+  margin: 0 auto;
+  /* margin-left: 30%;
+  margin-right: 30%; */
 }
 .headcontainer {
   display: flex;
@@ -132,12 +147,15 @@ button {
   align-items: center;
   position: relative;
 }
-.hidden {
-  display: none;
+
+.carousel-item.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* position: relative; */
 }
 .headofferdesc {
   font-family: Raleway;
-
   font-size: 36px;
   line-height: 1.2;
   font-weight: 500;
@@ -179,10 +197,10 @@ button {
   border-radius: 5px;
   border: none;
   margin-top: 0;
+  transition-duration: 0.4s;
 }
 .started:hover {
   box-shadow: 0 0 5px #fff;
-  transition-duration: 0.4s;
 }
 .headleft {
   position: absolute;
@@ -216,14 +234,84 @@ button {
   color: #d3c1ad;
   transition-duration: 0.4s;
 }
-.headpagination {
-  margin: auto;
-  margin-top: 325px;
-  padding-bottom: 40px;
+.getstarted {
+  position: fixed;
+  bottom: 10vh;
+  margin-left: 150px;
+  width: 500px;
+  height: 500px;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 5px 5px 5px rgb(51, 51, 51);
 }
-.headcircle {
-  color: #fff;
-  font-size: 12px;
+.contact {
+  padding-bottom: 30px;
+  font-family: Raleway;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 500;
+  color: rgb(51, 51, 51);
+}
+.contactlabel {
+  margin-right: 10px;
+  font-family: Montserrat;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+}
+.myfield {
+  width: 400px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #8c8c8c;
+}
+.myfield:focus {
+  outline: none;
+  border-color: #8c8c8c;
+}
+.getstartedbtn {
+  margin-top: 20px;
+  padding: 16px 32px;
+  width: 170px;
+  height: 53px;
+  background-color: #998675;
+  border-radius: 3px;
+  font-family: Raleway;
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-radius: 5px;
+  border: none;
+  transition-duration: 0.4s;
+}
+.getstartedbtn:hover {
+  box-shadow: 0 0 5px #b6a495;
+}
+.formclose {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  font-family: Raleway;
+  font-size: 20px;
+  color: #555555;
+  font-weight: 600;
+}
+.startedhead {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
 }
 .sectiongoods {
   margin: 0 auto;
@@ -746,4 +834,7 @@ mark {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+.hidden {
+  display: none;
 }

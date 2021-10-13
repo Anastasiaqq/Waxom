@@ -3,8 +3,18 @@ $(function (){
         // $(this).preventDefault();
         $(".basket").toggleClass("hidden");
     })
-    $(".close").click(function(){
+    $(".basketclose").click(function(){
         $(".basket").toggleClass("hidden");
     })
-    
+    $(".started").click(function(){
+        // $(this).preventDefault();
+        $(".getstarted").toggleClass("hidden");
+    })
+    $(".formclose").click(function(){
+        $(".getstarted").toggleClass("hidden");
+    })
+    $(".search").click(function(){
+        $(".searchinput").toggleClass("hidden");
+        $(".searchinput").focus();
+    })
 })

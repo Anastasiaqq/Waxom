@@ -33,59 +33,69 @@
                 <a href="#" class="navlink">Contacts</a>
                 <div class="navicons">
                     <button class="icon bskt"><i class="fas fa-shopping-basket"></i></button>
-                    <button href="" class="icon"><i class="fas fa-search"></i></button>
+                    <button href="" class="icon search"><i class="fas fa-search"></i></button>
                 </div>
 
                 <div class="basket hidden">
                     <div class="basketcontainer">
                         <p class="basketpage">Здесь будут ваши товары!</p>
-                        <button class="close">X</button>
-                    </div>
-                    
+                        <button class="basketclose">X</button>
+                    </div>                    
                 </div>
+                <input type="text" class="searchinput hidden" placeholder="Поиск...">
             </nav>
         </div>
 
         <div class="headoffer">
-
-            <div id="carouselExampleControls" class="headcontainer carousel slide" data-bs-ride="carousel">
-                <div  class="carousel-inner">
-                    <div class="headcontainer carousel-item active">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
                     <h2 class="headofferdesc">Unique and Modern Design</h2>
                     <h1 class="headofferhead">Portfolio PSD Template</h1>
                     <p class="headoffertext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis dolorem
                         voluptatibus facere earum provident delectus.</p>
                     <button class="started">get started!</button>                   
                     
-                    </div>
-                    <div class="carousel-item headcontainer">
-                        
-                        <h2 class="headofferdesc">Something else</h2>
-                        <h1 class="headofferhead">Portfolio PSD Template</h1>
-                        <p class="headoffertext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis dolorem
-                            voluptatibus facere earum provident delectus.</p>
-                        <button class="started">get started!</button>
+                  </div>
+                  <div class="carousel-item">
+                    <h2 class="headofferdesc">let it be even worse!</h2>
+                    <h1 class="headofferhead">No, really</h1>
+                    <p class="headoffertext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis dolorem
+                        voluptatibus facere earum provident delectus.</p>
+                    <button class="started">get started!</button>                   
                     
-                    </div>
-                    <div class="carousel-item headcontainer">
-                        
-                        <h2 class="headofferdesc">Let it be worse</h2>
-                        <h1 class="headofferhead">Portfolio PSD Template</h1>
-                        <p class="headoffertext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis dolorem
-                            voluptatibus facere earum provident delectus.</p>
-                        <button class="started">get started!</button>
-                        
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Предыдущий</span>
-                          </button>
-                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Следующий</span>
-                          </button>
+                  </div>
+                  <div class="carousel-item">
+                    <h2 class="headofferdesc">You can do worse!</h2>
+                    <h1 class="headofferhead">Never give up!</h1>
+                    <p class="headoffertext">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis dolorem
+                        voluptatibus facere earum provident delectus.</p>
+                    <button class="started">get started!</button>                   
+                    
+                  </div>
                 </div>
-            </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="hidden getstarted">
+                <div class="startedhead">
+                  <p class="contact">Оставьте свои контакты!</p>
+                  <button class="formclose">X</button>
+                </div>
+                  <form action="#" class="mycontactlist">
+                      <label class="contactlabel" for="email">E-mail</label>
+                      <input id="email" type="email" class="myfield" placeholder="ivanivanov@mail.ru">
+                      <label class="contactlabel" for="phone">Phone number</label>
+                      <input id="phone" type="text" class="myfield" placeholder="+7 915 555 55 55">
+                      <button class="getstartedbtn" type="submit">Отправить</button>
+                  </form>
+              </div>
         </div>
     </header>
     <section class="sectiongoods">
