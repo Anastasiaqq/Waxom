@@ -154,6 +154,16 @@ button {
   align-items: center;
   /* position: relative; */
 }
+.carousel-control-prev-icon {
+  position: absolute;
+  left: -5px;
+  top: 100px;
+}
+.carousel-control-next-icon {
+  position: absolute;
+  right: 5px;
+  top: 100px;
+}
 .headofferdesc {
   font-family: Raleway;
   font-size: 36px;
@@ -237,7 +247,7 @@ button {
 .getstarted {
   position: fixed;
   bottom: 10vh;
-  margin-left: 150px;
+  margin-left: 33%;
   width: 500px;
   height: 500px;
   padding: 80px;
@@ -464,6 +474,86 @@ button {
   box-shadow: 0 0 5px #fff;
   transform: scale(1.2);
   transition-duration: 0.4s;
+}
+/* .cntnr {
+  position: relative;
+  margin: 0 auto;
+} */
+.wordpresspurchase {
+  position: fixed;
+  bottom: 20vh;
+  left: 25%;
+
+  height: 400px;
+  padding: 50px;
+  background-color: #fff;
+  box-shadow: 5px 5px 5px rgb(51, 51, 51);
+}
+.purchasehead {
+  display: flex;
+  justify-content: space-between;
+}
+.choosetariff {
+  max-width: 350px;
+  font-family: Raleway;
+  font-size: 30px;
+  color: #555555;
+}
+.tariffitems {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.closepurchase {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  font-family: Raleway;
+  font-size: 20px;
+  color: #555555;
+  font-weight: 600;
+}
+.tariff {
+  padding-bottom: 20px;
+  font-family: Raleway;
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #555555;
+  margin-bottom: 16px;
+  text-decoration: none;
+}
+.price {
+  padding-bottom: 15px;
+  font-family: Montserrats;
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #181717;
+  margin-bottom: 16px;
+  text-decoration: none;
+}
+.buybutton {
+  padding: 5px 20px;
+  width: 120px;
+  height: 30px;
+  background-color: #998675;
+  border-radius: 3px;
+  font-family: Raleway;
+  font-size: 10px;
+  line-height: 23px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-radius: 5px;
+  border: none;
+  transition-duration: 0.4s;
+}
+.getstartedbtn:hover {
+  box-shadow: 0 0 5px #b6a495;
 }
 .project {
   margin: 0 auto;

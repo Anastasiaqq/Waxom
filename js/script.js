@@ -17,4 +17,10 @@ $(function (){
         $(".searchinput").toggleClass("hidden");
         $(".searchinput").focus();
     })
+    $(".pressbutton").click(function(){
+        $(".wordpresspurchase").toggleClass("hidden");
+    })
+    $(".closepurchase").click(function(){
+        $(".wordpresspurchase").toggleClass("hidden");
+    })
 })
