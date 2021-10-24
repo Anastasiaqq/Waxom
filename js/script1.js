@@ -1,34 +1,36 @@
-const linkGoods = document.querySelector("[href='#goods']");
-const linkPortfolio = document.querySelector("[href='#portfolio']");
+
+const linkUs = document.querySelector("[href='#us']");
+const linkOrder = document.querySelector("[href='#order']");
 const linkProjects = document.querySelector("[href='#projects']");
-const linkContacts = document.querySelector("[href='#contacts']");
+const linkNetworks = document.querySelector("[href='#networks']");
 
-const sectionGoods = document.getElementById("goods");
-const sectionPortfolio = document.getElementById("portfolio");
+const sectionHead = document.getElementById("head");
+const sectionUs = document.getElementById("us");
+const sectionOrder = document.getElementById("order");
 const sectionProjects = document.getElementById("projects");
-const sectionContacts = document.getElementById("contacts");
+const sectionNetworks = document.getElementById("networks");
 
-linkGoods.addEventListener("click", (e)=>{
+linkUs.addEventListener("click", (e)=>{
     e.preventDefault();
-    window.scrollTo(0, sectionGoods.clientHeight);
+    window.scrollTo(0, sectionHead.offsetHeight);
 
 });
 
-linkPortfolio.addEventListener("click", (e)=>{
+linkOrder.addEventListener("click", (e)=>{
     e.preventDefault();
-    window.scrollTo(0, sectionGoods.clientHeight + sectionPortfolio.clientHeight);
+    window.scrollTo(0, sectionHead.offsetHeight + sectionUs.offsetHeight);
 
 });
 
 linkProjects.addEventListener("click", (e)=>{
     e.preventDefault();
-    window.scrollTo(0, sectionGoods.clientHeight + sectionProjects.clientHeight + sectionPortfolio.clientHeight);
+    window.scrollTo(0, sectionHead.offsetHeight + sectionUs.offsetHeight + sectionOrder.offsetHeight);
 
 });
 
-linkContacts.addEventListener("click", (e)=>{
+linkNetworks.addEventListener("click", (e)=>{
     e.preventDefault();
     window.scrollTo(0, 
-        sectionGoods.clientHeight + sectionProjects.clientHeight + sectionPortfolio.clientHeight + sectionContacts.clientHeight);
+        sectionHead.offsetHeight + sectionUs.offsetHeight + sectionOrder.offsetHeight + sectionProjects.offsetHeight);
 
 });

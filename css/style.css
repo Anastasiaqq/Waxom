@@ -6,19 +6,20 @@ body {
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
+a:hover {
+  color: #fff;
+}
 .btn {
+  display: block;
+  margin-top: 0;
+  padding: 16px 32px;
   background-color: #998675;
-  border-radius: 3px;
   font-family: Raleway;
-
   text-transform: uppercase;
   color: #ffffff;
-  padding: 16px 32px;
   border-radius: 5px;
   border: none;
-  margin-top: 0;
   transition-duration: 0.4s;
-  display: block;
   cursor: pointer;
 }
 .btn:hover {
@@ -38,15 +39,17 @@ body {
   display: flex;
   align-items: center;
 }
+
 .headcont {
-  display: flex;
-  justify-content: space-between;
-  max-width: 850px;
   margin: 0 auto;
   padding-top: 40px;
   margin-bottom: 270px;
+  max-width: 850px;
+  display: flex;
+  justify-content: space-between;
 }
 .headlogo {
+  display: block;
   font-family: Raleway;
   font-size: 34px;
   line-height: 1.2;
@@ -54,9 +57,11 @@ body {
   letter-spacing: -0.04em;
   color: #ffffff;
   text-decoration: none;
-  display: block;
 }
 .logohead {
+  display: block;
+}
+.logopic {
   display: block;
 }
 .headnav {
@@ -65,13 +70,16 @@ body {
   justify-content: space-around;
   align-items: center;
 }
+.menu-burger {
+  display: none;
+}
 .navlink {
+  margin-right: 15px;
   font-family: Montserrat;
   font-size: 14px;
   line-height: 1.2;
   font-weight: 300;
   color: #ffffff;
-  margin-right: 15px;
   text-decoration: none;
 }
 .navlink:hover {
@@ -84,12 +92,12 @@ body {
 }
 .icon {
   margin: 0;
+  margin-right: 5px;
   padding: 0;
   border: none;
   background-color: transparent;
   font-size: 20px;
   color: #ffffff;
-  margin-right: 5px;
 }
 .navicons {
   position: relative;
@@ -164,7 +172,9 @@ body {
   align-items: center;
   position: relative;
 }
-
+.hiddenhead {
+  display: none;
+}
 /* .carousel-item {
   display: flex;
   flex-direction: column;
@@ -182,44 +192,40 @@ body {
   top: 100px;
 }
 .headofferdesc {
+  margin-bottom: 12px;
   font-family: Raleway;
   font-size: 36px;
   line-height: 1.2;
   font-weight: 500;
   color: #ffffff;
-  margin-bottom: 12px;
   text-align: center;
 }
 .headofferhead {
+  margin-top: 0;
+  margin-bottom: 20px;
   font-family: Raleway;
   text-align: center;
   font-size: 52px;
   line-height: 1.2;
   font-weight: 800;
   color: #ffffff;
-  margin-top: 0;
-  margin-bottom: 20px;
 }
 .headoffertext {
+  margin-top: 0;
+  margin-bottom: 50px;
   font-family: Montserrat;
   text-align: center;
   font-size: 16px;
   line-height: 24px;
   font-weight: 300;
   color: #ffffff;
-  margin-top: 0;
-  margin-bottom: 50px;
 }
 .started {
-  width: 170px;
-  height: 53px;
-
+  display: block;
+  margin: auto;
   font-size: 14px;
   line-height: 23px;
   font-weight: 800;
-
-  display: block;
-  margin: auto;
 }
 .getstarted {
   position: fixed;
@@ -266,9 +272,6 @@ body {
 }
 .getstartedbtn {
   margin-top: 20px;
-  padding: 16px 32px;
-  width: 170px;
-  height: 53px;
   font-size: 14px;
   line-height: 23px;
   font-weight: 800;
@@ -294,16 +297,21 @@ body {
 }
 .sectiongoods {
   margin: 0 auto;
+  padding-top: 70px;
   padding-bottom: 70px;
   background-color: #fff;
 }
-.goodscontainer {
+/* .goodscontainer {
   margin-top: 80px;
   margin-left: 18%;
   margin-right: 18%;
   max-width: 1200px;
   display: flex;
   justify-content: space-between;
+} */
+.accordion {
+  max-width: 1200px;
+  margin: auto;
 }
 .goodsitem {
   width: 25%;
@@ -323,11 +331,11 @@ body {
 }
 
 .goodlink {
+  margin-bottom: 16px;
+  margin-right: 30px;
   display: block;
   font-size: 49px;
   color: #555555;
-  text-decoration: none;
-  margin-bottom: 16px;
 }
 .goodhead {
   display: block;
@@ -339,14 +347,13 @@ body {
   margin-bottom: 16px;
   text-decoration: none;
 }
-.goodtext {
+.accordion-body {
+  /* margin-bottom: 30px; */
   font-family: Montserrat;
-  font-size: 14px;
+  font-size: 20px;
   line-height: 24px;
   font-weight: 300;
   color: #8c8c8c;
-  text-align: center;
-  margin-bottom: 30px;
   text-decoration: none;
 }
 .goodsitem::after {
@@ -384,13 +391,13 @@ body {
   color: #555555;
 }
 .realizationtext {
+  margin: 0;
   text-align: center;
   font-family: Montserrat;
   font-size: 16px;
   line-height: 28px;
   font-weight: 300;
   color: #8c8c8c;
-  margin: 0;
 }
 .realizationpic {
   margin-top: 20px;
@@ -427,10 +434,11 @@ body {
   margin-bottom: 0;
 }
 .pressbutton {
+  display: inline-flex;
   height: 50px;
   font-size: 14px;
   line-height: 23px;
-  font-weight: 800;
+  font-weight: 700;
 }
 .pressbutton:hover {
   transform: scale(1.2);
@@ -515,23 +523,25 @@ body {
   align-items: center;
 }
 .containerhead {
+  margin-left: 18%;
+  margin-right: 18%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 18%;
-  margin-right: 18%;
 }
 .projecthead {
   margin-top: 70px;
+  margin-bottom: 20px;
   text-align: center;
   font-family: Raleway;
   font-size: 30px;
   line-height: 1.2;
   font-weight: 600;
   color: #555555;
-  margin-bottom: 20px;
 }
 .projecttext {
+  margin-top: 0;
+  margin-bottom: 45px;
   text-align: center;
   max-width: 757px;
   font-family: Montserrat;
@@ -539,13 +549,19 @@ body {
   line-height: 28px;
   font-weight: 300;
   color: #8c8c8c;
-  margin-top: 0;
-  margin-bottom: 45px;
 }
 .itemphoto {
   background-color: #8c8c8c;
 }
+.buttoncontainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
 .projectbutton {
+  margin-right: 8px;
+  margin-bottom: 8px;
   background-color: #fff;
   border: 1px solid #ebebeb;
   border-radius: 3px;
@@ -555,7 +571,6 @@ body {
   font-weight: 300;
   color: #8c8c8c;
   padding: 3px 16px;
-  margin-right: 8px;
 }
 .projectbutton:hover {
   background-color: #998675;
@@ -563,10 +578,10 @@ body {
   transition-duration: 0.4s;
 }
 .projectcontainer {
+  margin: 0 auto;
   max-width: 1200px;
   padding-top: 32px;
   padding-bottom: 32px;
-  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
 }
@@ -578,6 +593,9 @@ body {
   position: relative;
 }
 .itempiclink {
+  display: block;
+}
+.itemphoto {
   display: block;
 }
 .itemdiv {
@@ -608,12 +626,12 @@ body {
 
 .itemparag {
   margin-left: 30px;
+  margin-bottom: 30px;
   font-family: Montserrat;
   font-size: 14px;
   line-height: 20px;
   font-weight: 300;
   color: #d1d1d1;
-  margin-bottom: 30px;
 }
 .projecthover {
   width: 100%;
@@ -653,25 +671,6 @@ body {
   color: #c7b299;
   transition-duration: 0.4s;
 }
-.load {
-  margin-bottom: 80px;
-  padding: 18px 44px;
-  background-color: #998675;
-  border-radius: 3px;
-  font-family: Raleway;
-  font-size: 14px;
-  line-height: 23px;
-  font-weight: 800;
-  text-transform: uppercase;
-  color: #ffffff;
-  border: none;
-}
-.load:hover {
-  box-shadow: 0 0 5px #d1d1d1;
-  transform: scale(1.2);
-  transition-duration: 0.4s;
-}
-
 .upperfooter {
   min-height: 508px;
   background-color: #191919;
@@ -879,4 +878,233 @@ mark {
 }
 .hidden {
   display: none;
+}
+.fixed-page {
+  overflow: hidden;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .head {
+    padding-left: 10px;
+    background-image: none;
+    min-height: 0;
+  }
+  .menu-burger {
+    margin-left: 10px;
+    position: absolute;
+    right: 10px;
+    width: 40px; /* определяем размеры блока */
+    height: 35px;
+    display: block;
+  }
+  .logopic {
+    height: 28px;
+    width: 28px;
+  }
+  .headlogo {
+    font-size: 24px;
+  }
+  .headnav {
+    top: 50px;
+    flex-direction: column;
+    width: 100vw;
+    height: 90vh;
+    opacity: 1;
+    transition: all 0.4s ease;
+  }
+  .btn {
+    padding: 8px 16px;
+  }
+  .headcont {
+    padding-top: 20px;
+    margin-bottom: 30px;
+  }
+  .carousel-item {
+    padding: 30px;
+  }
+  .headofferdesc {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+  .headofferhead {
+    font-size: 26px;
+    margin-bottom: 5px;
+  }
+  .headoffertext {
+    font-size: 14px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+  }
+  /* .started {
+    padding: 6px 20px;
+    width: 140px;
+    height: 35px;
+    font-size: 10px;
+    text-align: center;
+    font-weight: 700;
+  } */
+  .sectiongoods {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .goodlink {
+    font-size: 24px;
+  }
+  .goodhead {
+    font-size: 14px;
+  }
+  .accordion-body {
+    font-size: 14px;
+  }
+  .realizationcontainer {
+    margin: 0;
+    padding-top: 10px;
+  }
+  .realizationhead {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 24px;
+    text-align: center;
+  }
+  .realizationtext {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+  }
+  .realizationpic {
+    display: none;
+  }
+  .presscontainer {
+    margin: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .pressteam {
+    text-align: center;
+  }
+  .presstext {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .pressbutton {
+    height: auto;
+  }
+  .containerhead {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .projecthead {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+  .projecttext {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .projectcontainer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .projectitem {
+    width: 321px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .projecthover {
+    display: none;
+  }
+  .itemphoto {
+    width: 321px;
+  }
+  .itemdiv {
+    padding-top: 10px;
+  }
+  .itemtextlink {
+    font-size: 14px;
+  }
+  .itemparag {
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+  .basket {
+    position: absolute;
+    top: -92vh;
+    left: -43vw;
+    width: 100vw;
+    height: 100vh;
+  }
+  .basketcontainer {
+    justify-content: space-between;
+    overflow: hidden;
+  }
+  .getstarted {
+    position: absolute;
+    top: 0;
+    left: -33vw;
+    padding: 10px;
+    width: 100vw;
+    height: 100vh;
+  }
+  .startedhead {
+    width: 80vw;
+  }
+  .contact {
+    font-size: 24px;
+    padding-bottom: 10px;
+  }
+  .myfield {
+    width: 200px;
+  }
+  .wordpresspurchase {
+    position: absolute;
+    top: 230vh;
+    left: 0;
+    padding: 10px;
+    min-width: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+  }
+  .tariffitems {
+    flex-direction: column;
+  }
+  .upperfooter {
+    padding: 20px 10px;
+  }
+  .uppercontainer {
+    flex-direction: column;
+    padding-top: 0;
+  }
+  .upperitem:first-child {
+    display: none;
+  }
+  .upperhead {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .onepost {
+    max-width: none;
+  }
+  .lowercontainer {
+    padding-top: 10px;
+    flex-direction: column;
+  }
+  .lowernav {
+    flex-direction: column;
+  }
+  .lowerlink::after {
+    content: none;
+  }
+  .credits {
+    flex-direction: column;
+  }
+  .hidden {
+    display: none;
+  }
 }
